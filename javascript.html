@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript time teller</title>
+</head>
+<body>
+   <!-- <h3><code>The following conditional statement tells the time:</code></h3>  -->
+    <script> 
+        var time = prompt("Enter time");
+        // Using if else
+    if ( time <= 11 && time>=00){
+        document.write("Good Morning");
+    } else if( time>=12 && time<=17 ){
+        document.write("Good Afternoon");
+    } else if( time>=18 && time<=20){
+        document.write("Good Evening");
+    } else if(time>=21 && time<=23 ){ 
+        document.write("Good Night");
+    } else {
+        document.write("invalid");
+    }
+    </script> <br>
+    
+    <script>
+        let time1 = prompt("Enter the time");
+        // Using Switch Statement
+        switch (true) {
+            case(time1>=11 && time1<=00):
+                document.write("Good Morning!");
+                break;
+            
+            case(time1>=12 && time1<=17):
+                document.write("Good Afternoon!");
+                break;
+            
+            case(time1>=18 && time1<=20):
+                document.write("Good Evening!");
+                break;
+            
+            case(time1>=21 && time1<=23):
+                document.write("Good Night!");
+            
+                        
+            
+            default:
+                document.write("Invalid time!");
+                break;
+        }
+
+        // let a = 10, b = 20;
+        // if (a>b){
+        //     alert("A is greater");
+        // } else{
+        //     alert("B is greater");
+        // }
+
+    </script>
+</body>
+</html>
